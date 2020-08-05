@@ -1,0 +1,47 @@
+#root{
+    margin: 0;
+}
+
+.main {
+    margin: 0 auto;
+	display: flex;
+	align-items: stretch;
+    justify-content: space-between;
+
+}
+
+.header {
+    height: 7rem;
+    width: 100%;
+    background-color: $background-secondary;
+    color: $color-white;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 0 3rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+ 
+    }
+    
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    background-color: $background-secondary;
+    color: $color-white;
+    height: 7rem;
+    text-align: center;
+
+
+    @media only screen and (max-width: $bp-smallest) {
+        align-content: space-around;
+        justify-content: center;
+    }
+}
+
+

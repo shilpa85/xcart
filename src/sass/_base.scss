@@ -1,0 +1,57 @@
+// global variables
+$color-primary: #000;
+$color-grey: #676767;
+$color-white: #fff;
+$color-green: #06a99c;
+
+$background-primary: #fff;
+$background-secondary: #6C1D5F;
+
+$button-primary: #6C1D5F;
+
+//cart settings
+$color-border:  #e9e9ed; //
+
+//breakpoints
+
+$bp-largest: 100rem;     // 1600px
+$bp-large: 75em;     // 1200px
+$bp-medium: 62rem;     // 992px
+$bp-small: 48rem;     // 768px
+$bp-smallest: 35.5rem;     // 568px
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    min-height: 100vh;
+    background-color: $background-primary;
+    font-size: 1.3rem;
+}
+
+h1{ font-weight: 600; font-size: 3rem;}
+
+ul li {list-style: none; }
+
+a, a:hover, a:visited {text-decoration: none;}
